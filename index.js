@@ -38,3 +38,67 @@
 //     console.log(i);
 //   }
 // }
+
+//5. Напишіть код, який буде запитувати логін за допомогою prompt "Hello, please enter your login!"
+// і виводити результат у консоль браузера
+
+//Якщо під час вводу login нажали клавішу Esc, то вивести у консоль рядок "Authorization has been cancelled"
+//Якщо користувач вводить "admin", то prompt запитує пароль (Please enter your password)
+//Якщо користувач вводить щось відмінне від "admin", то вивести рядок "Goodbye!"
+
+//Пароль перевіряти так:
+//Якщо нажали клавішу Esc, то вивести у консоль рядок "Authorization has been cancelled"
+//Якщо користувач вводить "adminPassword", то вивести у консоль рядок "Hello!"
+//Якщо користувач вводить щось відмінне від "adminPassword", то вивести рядок "Goodbye!"
+
+// const ask = prompt("Hello, please enter your login!");
+// let message;
+// if (ask === null) {
+//   message = "Authorization has been cancelled";
+// } else if (ask === "admin") {
+//   const password = prompt("Please enter your password");
+
+//   if (password === "adminPassword") {
+//     message = "Hello!";
+//   } else if (password === null) {
+//     message = "Authorization has been cancelled";
+//   } else {
+//     message = "Goodbye!";
+//   }
+// } else {
+//   message = "Goodbye!";
+// }
+// console.log(message);
+
+
+// const ask = prompt("Hello, please enter your login!");
+// let message;
+
+// switch (ask) {
+//   case null:
+//     message = "Authorization has been cancelled";
+//     break;
+
+//   case "admin":
+//     const password = prompt("Please enter your password");
+
+//     switch (password) {
+//       case "adminPassword":
+//         message = "Hello!";
+//         break;
+//       case null:
+//         message = "Authorization has been cancelled";
+//         break;
+
+//       default:
+//         message = "Goodbye!";
+//         break;
+//     }
+//     break;
+
+//   default:
+//     message = "Goodbye!";
+//     break;
+// }
+
+// console.log(message);
