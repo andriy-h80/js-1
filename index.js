@@ -102,6 +102,35 @@
 
 // console.log(message);
 
+
+//1. Напишіть скрипт, який для об'єкта user, послідовно:
+//1 додасть властивість mood зі значенням 'happy'
+//2 замінить значення властивості hobby на 'skydiving'
+//3 замінить значення властивості premium на false
+//4 використовуючи Object.keys() и for...of, виведе у консоль зміст об'єкта users у форматі:
+
+// name: John
+// "age: 20"
+// "hobby: skydiving"
+// "premium: false"
+// "mood: happy"
+
+
+// const user = {
+//   name: "John",
+//   age: 20,
+//   hobby: "tenis",
+//   premium: true,
+// };
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// for (const keys of Object.keys(user)){
+//     console.log(`${keys}: ${user[keys]} `)
+// }
+
+
 //2. Є об'єкт, в якому зберігаються зарплати команди. Напишіть функцію getTotalSalary,
 // яка буде повертати загальну суму зарплат. Якщо об'єкт пустий, то функція має повернути 0
 
@@ -122,3 +151,9 @@
 // };
 
 // console.log(getTotalSalary(salaries));
+
+
+
+
+
+
