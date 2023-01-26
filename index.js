@@ -204,3 +204,18 @@
 // calculator.read('8', '4');
 // console.log(calculator);
 // console.log(calculator.mult());
+
+
+//5. Напишіть функцію updateObject, яка приймає об'єкт та ключ
+//і повертає новий об'єкт без вказаної властивості
+//Очікуваний результат ({ a: 1, b: 2, c: 3 }, 'b') => {a: 1, c: 3}
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/delete
+
+
+// function updateObject(object, key) {
+//  const result = {...object};
+//  delete result[key];
+//  return result;
+// }
+
+// console.log(updateObject({ a: 1, b: 2, c: 3 }, 'b'))
