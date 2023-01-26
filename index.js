@@ -102,7 +102,6 @@
 
 // console.log(message);
 
-
 //1. Напишіть скрипт, який для об'єкта user, послідовно:
 //1 додасть властивість mood зі значенням 'happy'
 //2 замінить значення властивості hobby на 'skydiving'
@@ -114,7 +113,6 @@
 // "hobby: skydiving"
 // "premium: false"
 // "mood: happy"
-
 
 // const user = {
 //   name: "John",
@@ -129,7 +127,6 @@
 // for (const keys of Object.keys(user)){
 //     console.log(`${keys}: ${user[keys]} `)
 // }
-
 
 //2. Є об'єкт, в якому зберігаються зарплати команди. Напишіть функцію getTotalSalary,
 // яка буде повертати загальну суму зарплат. Якщо об'єкт пустий, то функція має повернути 0
@@ -152,8 +149,27 @@
 
 // console.log(getTotalSalary(salaries));
 
+//3. Напишіть фукцію calcTotalPrice(stones, stonesName),
+//яка приймає масив об'єктів і рядок з назвою каменю.
+//Функція обчислює і повертає загальну вартість каменів з таким іменем
 
+const stones = [
+  { name: "emerald", price: 1300, quantity: 4 },
+  { name: "diamond", price: 2700, quantity: 6 },
+  { name: "sapphire", price: 400, quantity: 7 },
+  { name: "rubble", price: 150, quantity: 100 },
+];
 
+let calcTotalPrice = function (stones, stonesName) {
+  let totalSum = 0;
 
+  for (const stone of stones) {
+    if (stone.name === stonesName) {
+      totalSum = stone.price * stone.quantity;
+    }
+  }
 
+  return totalSum;
+};
 
+console.log(calcTotalPrice(stones, "qwe"));
