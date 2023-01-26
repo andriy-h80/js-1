@@ -180,19 +180,27 @@
 //mult() перевіряє чи присутні  властивості prop1/prop2 та повертає їх добуток, в противному випадку повертає null
 // Не забудьте, що математичні оператори працюють коректно тільки з числовими значеннями
 
-const calculator = {
-  read(a, b) {
-    this.prop1 = a;
-    this.prop2 = b;
-  },
-  sum() {
-    if (this.prop1 && this.prop2) {
-      return this.prop1 + this.prop2;
-    }
-    return null;
-  },
-  mult() {},
-};
-calculator.read(2, 4);
-console.log(calculator);
-console.log(calculator.sum());
+// const calculator = {
+//   read(a, b) {
+//     this.prop1 = a;
+//     this.prop2 = b;
+//   },
+//   sum() {
+//     if (this.prop1 && this.prop2) {
+//       return Number(this.prop1) + Number(this.prop2);
+//     }
+//     return null;
+//   },
+//   mult() {
+//     // if (this.prop1 && this.prop2) {
+//     //     return this.prop1 * this.prop2;
+//     //   }
+//     //   return null;
+    
+//     return this.prop1 && this.prop2 ? this.prop1 * this.prop2 : null;
+    
+//   },
+// };
+// calculator.read('8', '4');
+// console.log(calculator);
+// console.log(calculator.mult());
