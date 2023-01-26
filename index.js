@@ -70,7 +70,6 @@
 // }
 // console.log(message);
 
-
 // const ask = prompt("Hello, please enter your login!");
 // let message;
 
@@ -102,3 +101,24 @@
 // }
 
 // console.log(message);
+
+//2. Є об'єкт, в якому зберігаються зарплати команди. Напишіть функцію getTotalSalary,
+// яка буде повертати загальну суму зарплат. Якщо об'єкт пустий, то функція має повернути 0
+
+// const salaries = {
+//   mango: 100,
+//   poly: 160,
+//   ajax: 1470,
+// };
+
+// const getTotalSalary = function (salaries) {
+//   const values = Object.values(salaries);
+//   let result = 0;
+//   for (const value of values) {
+//     result += value;
+//   }
+
+//   return result;
+// };
+
+// console.log(getTotalSalary(salaries));
