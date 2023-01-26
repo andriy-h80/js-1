@@ -153,23 +153,46 @@
 //яка приймає масив об'єктів і рядок з назвою каменю.
 //Функція обчислює і повертає загальну вартість каменів з таким іменем
 
-const stones = [
-  { name: "emerald", price: 1300, quantity: 4 },
-  { name: "diamond", price: 2700, quantity: 6 },
-  { name: "sapphire", price: 400, quantity: 7 },
-  { name: "rubble", price: 150, quantity: 100 },
-];
+// const stones = [
+//   { name: "emerald", price: 1300, quantity: 4 },
+//   { name: "diamond", price: 2700, quantity: 6 },
+//   { name: "sapphire", price: 400, quantity: 7 },
+//   { name: "rubble", price: 150, quantity: 100 },
+// ];
 
-let calcTotalPrice = function (stones, stonesName) {
-  let totalSum = 0;
+// let calcTotalPrice = function (stones, stonesName) {
+//   let totalSum = 0;
 
-  for (const stone of stones) {
-    if (stone.name === stonesName) {
-      totalSum = stone.price * stone.quantity;
+//   for (const stone of stones) {
+//     if (stone.name === stonesName) {
+//       totalSum = stone.price * stone.quantity;
+//     }
+//   }
+
+//   return totalSum;
+// };
+
+// console.log(calcTotalPrice(stones, "qwe"));
+
+//4. Створіть об'єкт calculator з трьома методами
+//read(a, b) - приймає два аргумента та зберігає їх як властивості об'єкта під ключами prop1 та prop2
+//sum() перевіряє чи присутні  властивості prop1/prop2 та повертає їх суму, в противному випадку повертає null
+//mult() перевіряє чи присутні  властивості prop1/prop2 та повертає їх добуток, в противному випадку повертає null
+// Не забудьте, що математичні оператори працюють коректно тільки з числовими значеннями
+
+const calculator = {
+  read(a, b) {
+    this.prop1 = a;
+    this.prop2 = b;
+  },
+  sum() {
+    if (this.prop1 && this.prop2) {
+      return this.prop1 + this.prop2;
     }
-  }
-
-  return totalSum;
+    return null;
+  },
+  mult() {},
 };
-
-console.log(calcTotalPrice(stones, "qwe"));
+calculator.read(2, 4);
+console.log(calculator);
+console.log(calculator.sum());
